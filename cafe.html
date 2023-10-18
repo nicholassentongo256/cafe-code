@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Cafe</h1>
+        <p>Your favorite place for coffee and more!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to My Cafe, where we serve the best coffee in town. Enjoy a cozy atmosphere and friendly service.</p>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <p>Our menu includes a variety of coffee, tea, and delicious pastries. Check out our daily specials!</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>My Cafe has been a part of the community for over 10 years. We are dedicated to serving quality coffee.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Visit us at Gayaza, Kampala (UG). Call us at +256761136867 or email info@mycafe.com.</p>
+        </section>
+
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="coffeeType">Coffee Type:</label>
+                <select id="coffeeType" name="coffeeType">
+                    <option value="espresso">Espresso</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="latte">Latte</option>
+                    <option value="americano">Americano</option>
+                </select>
+                <br>
+                <label for="size">Size:</label>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Small</label>
+                <input type="radio" id="medium" name="size" value="medium" checked>
+                <label for="medium">Medium</label>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+                <br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <br>
+                <input type="submit" value="Place Order">
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 My Cafe
+    </footer>
+</body>
+</html>
